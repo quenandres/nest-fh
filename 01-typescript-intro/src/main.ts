@@ -1,3 +1,4 @@
+import { name, age } from './bases/01-types';
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
@@ -12,6 +13,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </a>
     <h1>Vite + TypeScript</h1>
     <div class="card">
+    <p>His name is ${name} and he is ${age}</p>
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">

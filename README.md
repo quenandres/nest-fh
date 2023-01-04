@@ -24,3 +24,5 @@ Esta sección tiene por objetivo dar unas bases sobre TypeScript con la idea de 
 Es importante recalcar que esto no es una introducción a TypeScript, son conceptos que necesito exponer porque los usaremos en el curso de Nest.
 
 ## _*9. Preparación del proyecto*_
+
+## _*10. Tipos y bases sobre módulos*_
