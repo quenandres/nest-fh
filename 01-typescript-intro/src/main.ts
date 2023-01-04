@@ -2,13 +2,13 @@ import { name, age } from './bases/01-types';
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
-import { pokemon } from './bases/02-objects';
+import { charmander } from './bases/02-objects';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
-      Hello ${pokemon.name}
+      Hello ${charmander.name}
     </a>
     <a href="https://www.typescriptlang.org/" target="_blank">
       <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />

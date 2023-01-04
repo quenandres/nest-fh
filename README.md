@@ -24,10 +24,32 @@ Esta sección tiene por objetivo dar unas bases sobre TypeScript con la idea de 
 Es importante recalcar que esto no es una introducción a TypeScript, son conceptos que necesito exponer porque los usaremos en el curso de Nest.
 
 ## _*9. Preparación del proyecto*_
-
+Se crea el proyecto en vite.
 ## _*10. Tipos y bases sobre módulos*_
-
+Las variables se deben exportar para crear modularidad en los archivos.
 ## _*11. Tipos de datos - continuación*_
 
 ## _*12. Objetos e interfaces*_
+```ts
+interface Pokemon {
+    id: number;
+    name: string;
+    age?: number;
+}
 
+export const bulbasur: Pokemon = {
+    id: 1,
+    name: 'Bulbasur',
+    age: 44
+}
+export const charmander: Pokemon = {
+    id: 2,
+    name: 'Charmander'
+}
+```
+## _*13. Tipos en arreglos*_
+
+```ts
+export const pokemons: Pokemon[] = [];
+pokemons.push(bulbasur, charmander);
+```
