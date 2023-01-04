@@ -26,3 +26,6 @@ Es importante recalcar que esto no es una introducción a TypeScript, son concep
 ## _*9. Preparación del proyecto*_
 
 ## _*10. Tipos y bases sobre módulos*_
+
+
+## _*11. Tipos de datos - continuación*_
