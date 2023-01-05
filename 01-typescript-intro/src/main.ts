@@ -2,7 +2,8 @@ import { name, age } from './bases/01-types';
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
-import { charmander } from './bases/02-objects';
+//import { charmander } from './bases/02-objects';
+import { charmander } from './bases/03-classes';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>

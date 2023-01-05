@@ -53,3 +53,22 @@ export const charmander: Pokemon = {
 export const pokemons: Pokemon[] = [];
 pokemons.push(bulbasur, charmander);
 ```
+
+## _*14. Clases y forma abreviada*_
+Las clases son la abstracción de un objeto en el mundo real.
+_Explicita_
+```ts
+class Pokemon {
+    public id: number;
+    public name: string;
+    constructor(id: number, name: string) {
+        this.id = id;
+        this.name = name;
+        console.log('constructor');
+    }
+}
+```
+_Implicita_
+```ts
+
+```
