@@ -70,5 +70,28 @@ class Pokemon {
 ```
 _Implicita_
 ```ts
-
+export class Pokemon {
+    constructor(
+        protected id: number,
+        public name: string
+    ) {}
+}
 ```
+## _*15. Getters, métodos y THIS*_
+Los metodos getter, dan la funcionalidad de tener propiedades con ciertas modificaciones que brindemos.
+
+```ts
+export class Pokemon {
+
+    get imageUrl(): string {
+        return `https://pokemon.com/${ this.id }`;
+    }
+
+    constructor(
+        public readonly id: number,
+        public name: string
+    ) {}
+
+}
+```
+

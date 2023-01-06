@@ -7,11 +7,26 @@ export class Pokemon {
         this.name = name;
         console.log('constructor');
     } */
+    //
+    get imageUrl(): string {
+        return `https://pokemon.com/${ this.id }`;
+    }
 
     constructor(
-        protected id: number,
+        public readonly id: number,
         public name: string
     ) {}
+
+    scream() {
+        console.log(`${this.name.toUpperCase()}!!!!`);        
+    }
+
+    speak() {
+        console.log(`${this.name.repeat(3)}`);
+    }
 }
 
 export const charmander = new Pokemon(4, 'Charmander');
+console.log(charmander);
+charmander.scream();
+charmander.speak();
