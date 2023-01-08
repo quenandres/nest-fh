@@ -97,3 +97,17 @@ export class Pokemon {
 
 ## _*16. Métodos asíncronos*_
 Un metodo asincrono es un metodo que se ejecuta a destiempo, retorna una promesa
+
+
+## _*17. Colocar tipo de dato a respuestas http (genéricos)*_
+
+con ayuda de la extension json to code, creamos la interfaz del api.
+
+```ts
+async getMoves(): Promise<Move[]> {
+    const {data:{moves}} = await axios.get<PokeapiResponse>(`https://pokeapi.co/api/v2/pokemon/${this.id}`);
+    console.log(moves[0].move.name.toUpperCase());
+    return moves;
+}
+```
+Con esta especificación se tendra la ayuda en cada respuesta.
