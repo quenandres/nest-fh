@@ -95,3 +95,5 @@ export class Pokemon {
 }
 ```
 
+## _*16. Métodos asíncronos*_
+Un metodo asincrono es un metodo que se ejecuta a destiempo, retorna una promesa
