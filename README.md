@@ -127,3 +127,53 @@ async get<T>( url: string ) {
 ```
 
 Principio de Liskov: Cada clase que hereda de otra puede usarse como su padre sin necesidad de conocer las diferencias entre ellas.
+
+## _*20. Resolver el principio de sustitución*_
+
+Se le añade una dependecia a la clase.
+
+```ts
+import axios from 'axios';
+export interface HttpAdapter {
+    get<T>(url: string): Promise<T>
+}
+
+
+export class PokeAPiFetchAdapter implements HttpAdapter {
+    async get<T>( url:string ): Promise<T> {
+        const resp = await fetch(url);
+        const data: T = await resp.json();
+        return data;
+    }
+}
+
+export class PokeApiAdapter implements HttpAdapter {
+    private readonly axios = axios;
+
+    async get<T>( url: string ): Promise<T> {
+        const { data } = await this.axios.get<T>( url );
+        return data;
+    }
+}
+```
+
+
+```ts
+constructor(
+    public readonly id: number, 
+    public name: string,
+    private readonly http: HttpAdapter
+) {}
+
+const pokeApiAxios = new PokeApiAdapter();
+const pokeApiFetch = new PokeAPiFetchAdapter();
+
+export const charmander = new Pokemon( 4, 'Charmander', pokeApiAxios );
+export const squrtle = new Pokemon( 3, 'Squrtle', pokeApiAxios );
+export const pikachu = new Pokemon( 2, 'Pikachu', pokeApiFetch );
+```
+
+Al cumplir el atributo _http_ con la interfaz de HttpAdapter acepta ambas clases.
+
+## _*21. Decoradores*_
+Los decoradores son funciones.
