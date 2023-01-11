@@ -111,3 +111,7 @@ async getMoves(): Promise<Move[]> {
 }
 ```
 Con esta especificación se tendra la ayuda en cada respuesta.
+
+## _*18. Inyección de dependencias*_
+Inyecta o añade una depedencia, para evitar que la clase, metodo o el atributo tenga toda la funcionalidad interna.
+Creamos una clase adaptadora, que tendra la responsabilidad de independizar el funcionamiento de la libreria de axios, indicando su funcionamiento y extendiendolo para centralizar su funcionamiento.
