@@ -115,3 +115,15 @@ Con esta especificación se tendra la ayuda en cada respuesta.
 ## _*18. Inyección de dependencias*_
 Inyecta o añade una depedencia, para evitar que la clase, metodo o el atributo tenga toda la funcionalidad interna.
 Creamos una clase adaptadora, que tendra la responsabilidad de independizar el funcionamiento de la libreria de axios, indicando su funcionamiento y extendiendolo para centralizar su funcionamiento.
+
+
+## _*19. Genéricos + Sustitución de Liskov*_
+Es un estandar que el primer generico sea _<T>_ 
+```ts
+async get<T>( url: string ) {
+    const { data } = await this.axios.get( url );
+    return data;
+}
+```
+
+Principio de Liskov: Cada clase que hereda de otra puede usarse como su padre sin necesidad de conocer las diferencias entre ellas.
