@@ -188,3 +188,6 @@ const MyDecorator = () => {
 ```
 
 Si llamamos a otra clase, los atributos se pintan como si originalmente viniera de esta segunda clase.
+
+# _*22. Decorador de método - @Deprecated*_
+Usamos un decorador que nos sirve para volver obsoleto un metodo, poniendo en consola un mensaje de por que es obsoleto.
