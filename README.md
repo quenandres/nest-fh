@@ -177,3 +177,14 @@ Al cumplir el atributo _http_ con la interfaz de HttpAdapter acepta ambas clases
 
 ## _*21. Decoradores*_
 Los decoradores son funciones.
+
+```ts
+const MyDecorator = () => {
+    return ( target: Function ) => {
+        //console.log(target);        
+        return NewPokemon;
+    }
+}
+```
+
+Si llamamos a otra clase, los atributos se pintan como si originalmente viniera de esta segunda clase.

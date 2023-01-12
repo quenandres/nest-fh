@@ -4,7 +4,8 @@ import typescriptLogo from './typescript.svg'
 import { setupCounter } from './counter'
 //import { charmander } from './bases/02-objects';
 //import { charmander } from './bases/03-classes';
-import { charmander } from './bases/04-injection';
+//import { charmander } from './bases/04-injection';
+import { charmander } from './bases/05-decorators';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
