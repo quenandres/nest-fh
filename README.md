@@ -191,3 +191,25 @@ Si llamamos a otra clase, los atributos se pintan como si originalmente viniera 
 
 # _*22. Decorador de método - @Deprecated*_
 Usamos un decorador que nos sirve para volver obsoleto un metodo, poniendo en consola un mensaje de por que es obsoleto.
+
+# _Sección 3: Primero pasos en Nest_
+Nest envuelve express y fastify.
+
+Estamos entrando a nuestra primera sección sobre Nest, aquí veremos:
+
+
+
+### ¿Qué es Nest?
+### ¿Por qué usarlo?
+> Explicación sobre cada archivo en un proyecto nuevo de Nest
+
+- Core Nest building blocks
+- Módulos
+- Controladores (Post, Patch, Get, Delete)
+- Primeros decoradores
+- Servicios
+- Inyección de dependencias
+- Pipes
+- Exception Filters
+>
+Adicionalmente estaremos creando un Rest Api inicial para ir explicando cada concepto paso a paso.
