@@ -239,3 +239,13 @@ Decorador de controlador, que indica que ruta debe responder este controlador.
 ```ts
 @Controller('cars')
 ```
+
+## _*33. Desactivar Prettier*_
+
+```bash 
+npm uninstall prettier
+```
+
+## _*34. Obtener un carro por ID*_
+
+Creamos 2 metodos para que respondan a las solicitudes.
