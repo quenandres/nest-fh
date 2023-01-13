@@ -227,3 +227,15 @@ Framework de backend, que usa express y fastify como base. Usa typescript por de
 Los modulos agrupan y desacoplan un conjunto de funcionalidades especifica por dominio.
 Ej: auth.module.ts, encargado de todo lo relacionado con la autenticación.
 
+## _*32. Controladores*_
+Controlan rutas, son los encargados re recibir la solicitud y dar una respuesta.
+
+> Ayuda con comandos
+```bash
+nest -h
+```
+
+Decorador de controlador, que indica que ruta debe responder este controlador.
+```ts
+@Controller('cars')
+```
