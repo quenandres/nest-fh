@@ -221,3 +221,6 @@ Framework de backend, que usa express y fastify como base. Usa typescript por de
 
 ## _*29. Generar nuestro primer proyecto - CarDealership*_
 
+## _*30. Explicación de cada archivo y directorio*_
+
+
