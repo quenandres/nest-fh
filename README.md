@@ -213,3 +213,11 @@ Estamos entrando a nuestra primera sección sobre Nest, aquí veremos:
 - Exception Filters
 >
 Adicionalmente estaremos creando un Rest Api inicial para ir explicando cada concepto paso a paso.
+
+## _*27. ¿Qué es Nest? y ¿Por qué usarlo?*_
+Framework de backend, que usa express y fastify como base. Usa typescript por defecto y es la manera recomendable de utilizarlo.
+
+## _*28. Instalar Nest CLI - Command Line Interface*_
+
+## _*29. Generar nuestro primer proyecto - CarDealership*_
+
