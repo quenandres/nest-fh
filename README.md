@@ -249,3 +249,24 @@ npm uninstall prettier
 ## _*34. Obtener un carro por ID*_
 
 Creamos 2 metodos para que respondan a las solicitudes.
+
+
+## _*35. Servicios*_
+Todos servicios son providers, pero no todos los providers son servicios.
+Los providers son clases que se pueden inyectar
+
+Alojan la lógica de negocio de tal manera que sea reutilizable mediante inyección de dependencias. 
+Ej: PeliculasService para todo lo relacionado a obtener, grabar, actualizar o eliminar información de películas.
+
+```bash
+nest g s cars --no-spec
+```
+Se le envia la bandera de _--no-spec_  para que no cree archivos de test.
+
+```ts
+@Injectable()
+```
+El decorador _Injectable_ indica que se puede inyectar.
+
+
+
