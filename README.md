@@ -223,4 +223,7 @@ Framework de backend, que usa express y fastify como base. Usa typescript por de
 
 ## _*30. Explicación de cada archivo y directorio*_
 
+## _*31. Módulos*_
+Los modulos agrupan y desacoplan un conjunto de funcionalidades especifica por dominio.
+Ej: auth.module.ts, encargado de todo lo relacionado con la autenticación.
 
