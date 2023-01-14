@@ -268,5 +268,6 @@ Se le envia la bandera de _--no-spec_  para que no cree archivos de test.
 ```
 El decorador _Injectable_ indica que se puede inyectar.
 
-
+## _*36. Inyección de dependencias*_
+Se inyecta el servicio de cars, para que sea utilizado por el controlador.
 
